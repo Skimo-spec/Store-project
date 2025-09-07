@@ -1,0 +1,252 @@
+:root{
+    --m: #ECE5D8;
+    /* --s:#321B15; */
+    --s:#111111;
+    --h1: #a39e92;
+    /* --h2: #48271f; */
+    --h2:#2F2F2F;
+    --font:#222222;
+    --par:#666666;
+}
+.darkmode{
+    --m:#B1B2B5;
+    --s:#1A1D29;
+    --h1: #787c84;
+    --h2: #2c3043;
+}
+
+.sec-form{
+    margin: 240px 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form-container{
+    width: 350px;
+    background-color: var(--h1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+.form-container p , a{
+    color: var(--s);
+}
+.title{
+    text-align: center;
+    margin: 10px 0 30px;
+    font-size: 28px;
+    font-weight: 800;
+}
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 15px;
+}
+.form input{
+    border-radius: 5px;
+    border: 2px solid var(--m);
+    outline: 0;
+    padding: 12px 15px;
+    transition: 0.3s ease-in-out;
+}
+.form input:focus{
+    border-color: var(--s);
+}
+.page-link{
+    margin: 0;
+    text-align: end;
+}
+.page-link .page-link-label{
+    color: var(--h2);
+    font-size: 15px;
+    transition: 0.3s;
+}
+.page-link .page-link-label:hover{
+    color: var(--m);
+}
+.form-btn{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background: var(--s);
+    color: var(--h1);
+    cursor: pointer;
+}
+.form-btn {
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.form-btn:hover {
+  box-shadow: .5px .5px 20px #252525bd;
+}
+
+.form-btn::after {
+  content: "WELCOME";
+  height: 50px;
+  width: 100%;
+  background-color: var(--h2);
+  color: var(--h1);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(50px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.form-btn::before {
+  content: "LOGIN";
+  height: 50px;
+  width: 100%;
+  background-color: var(--s);
+  color: var(--h1);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.form-btn:focus::after {
+  transform: translateY(0) scale(1.2);
+}
+
+.form-btn:focus::before {
+  transform: translateY(-50px) scale(0) rotate(120deg);
+}
+
+.sign-up-label{
+    margin: 0;
+    font-size: 15px;
+    color: var(--h2);
+}
+.sign-up-label .sign-up-link{
+    color: var(--s);
+    text-decoration: underline;
+    font-size: 18px;
+    margin-left: 2px;
+    transition: 0.3s ease-in-out;
+}
+.sign-up-label .sign-up-link:hover{
+    color: var(--m);
+}
+.buttons-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 15px;
+}
+.buttons-container i{
+    font-size: 22px;
+}
+.apple-login-button,
+.google-login-button{
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    gap: 10px;
+}
+.apple-login-button{
+    background-color: var(--h2);
+    border: 2px solid var(--s);
+    color: var(--h1);
+}
+.google-login-button{
+    border: 2px solid var(--par);
+    color: var(--s);
+}
+
+.signup-form-btn{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background: var(--s);
+    color: var(--h1);
+    cursor: pointer;
+}
+.signup-form-btn{
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.signup-form-btn:hover {
+  box-shadow: .5px .5px 20px #252525bd;
+}
+
+.signup-form-btn::after {
+  content: "WELCOME";
+  height: 50px;
+  width: 100%;
+  background-color: var(--h2);
+  color: var(--h1);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(50px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.signup-form-btn::before {
+  content: "SIGN UP";
+  height: 50px;
+  width: 100%;
+  background-color: var(--s);
+  color: var(--h1);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.signup-form-btn:focus::after {
+  transform: translateY(0) scale(1.2);
+}
+
+.signup-form-btn:focus::before {
+  transform: translateY(-50px) scale(0) rotate(120deg);
+}
